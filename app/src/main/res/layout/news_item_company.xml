@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+    android:id="@+id/constraintLayout_item_id">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/image_view_post_news_id"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/background_corner_gray_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_view_company_id"
+                    app:riv_corner_radius="16dp"
+                    tools:src="@drawable/credit" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="4dp"
+                    android:background="@drawable/circle_background_whit"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_view_post_news_id"
+                    app:layout_constraintEnd_toEndOf="@+id/image_view_post_news_id"
+                    app:layout_constraintStart_toStartOf="@+id/image_view_post_news_id"
+                    app:layout_constraintTop_toTopOf="@+id/image_view_post_news_id" />
+
+                <TextView
+                    android:id="@+id/text_view_title_post_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_seeing_id" />
+
+                <TextView
+                    android:id="@+id/text_view_description_post_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_title_post_id" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_view_company_id"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/credit" />
+
+                <TextView
+                    android:id="@+id/text_view_company_name_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/text_view_date_published_id"
+                    app:layout_constraintStart_toEndOf="@+id/image_view_company_id"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="BBC News" />
+
+                <TextView
+                    android:id="@+id/text_view_date_published_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/image_view_post_news_id"
+                    app:layout_constraintStart_toStartOf="@+id/text_view_company_name_id"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_company_name_id"
+                    tools:text="@string/_29_11_2021" />
+
+                <ImageView
+                    android:id="@+id/image_view_like_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/text_view_like_id"
+                    app:layout_constraintStart_toStartOf="@+id/text_view_like_id"
+                    app:layout_constraintTop_toBottomOf="@+id/image_view_post_news_id"
+                    app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+                <TextView
+                    android:id="@+id/text_view_like_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_view_like_id"
+                    tools:text="600" />
+
+                <ImageView
+                    android:id="@+id/image_view_seeing_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/text_view_seeing_id"
+                    app:layout_constraintStart_toStartOf="@+id/text_view_seeing_id"
+                    app:layout_constraintTop_toTopOf="@+id/image_view_like_id"
+                    app:srcCompat="@drawable/ic_baseline_visibility_24" />
+
+                <TextView
+                    android:id="@+id/text_view_seeing_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    app:layout_constraintStart_toEndOf="@+id/text_view_like_id"
+                    app:layout_constraintTop_toBottomOf="@+id/image_view_seeing_id"
+                    tools:text="3105" />
+
+                <ImageView
+                    android:id="@+id/image_view_share_post_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_view_seeing_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/image_view_seeing_id"
+                    app:srcCompat="@drawable/ic_baseline_share_24" />
+
+                <ImageButton
+                    android:id="@+id/image_view_comment_post_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_baseline_send_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/edit_text_comment_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/edit_text_comment_id" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_show_all_comments_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/edit_text_comment_id"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/edit_text_comment_id">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_up_24" />
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:scaleY="-1"
+                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_up_24" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_text_comment_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:inputType="textFilter|textMultiLine"
+                    android:hint="@string/write_comment"
+                    app:layout_constraintEnd_toStartOf="@+id/image_view_comment_post_id"
+                    app:layout_constraintStart_toEndOf="@+id/linear_layout_show_all_comments_id"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_description_post_id" />
+
+              <Switch
+                    android:id="@+id/switch_active_news_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/status"
+                    android:textColor="@color/gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/text_view_company_name_id" />
+                <TextView
+                    android:id="@+id/text_view_publish_news_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/visible"
+                    android:theme="@style/FontTheme2"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_view_publish_news_id"
+                    app:layout_constraintEnd_toStartOf="@+id/image_view_publish_news_id"
+                    app:layout_constraintTop_toTopOf="@+id/image_view_publish_news_id" />
+
+                <ImageView
+                    android:id="@+id/image_view_publish_news_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_view_location_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/switch_active_news_id"
+                    app:srcCompat="@drawable/ic_baseline_visibility_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_view_date_published_id"
+                    app:layout_constraintStart_toEndOf="@+id/text_view_date_published_id"
+                    app:layout_constraintTop_toTopOf="@+id/text_view_date_published_id"
+                    app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/text_view_location_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="@string/palestine"
+                    app:layout_constraintStart_toEndOf="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout_first_comment_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_text_comment_id">
+
+
+                    <TextView
+                        android:id="@+id/textView_number_comment_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/FontTheme3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="1.9k" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/comments"
+                        android:theme="@style/FontTheme3"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView_number_comment_id"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/textView_number_comment_id"
+                        app:layout_constraintTop_toTopOf="@+id/textView_number_comment_id" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image_view_user_image_comment_id"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_baseline_account_circle_black_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView_number_comment_id" />
+
+
+                    <TextView
+                        android:id="@+id/text_view_user_name_comment_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/text_view_more_comment_id"
+                        app:layout_constraintStart_toEndOf="@+id/image_view_user_image_comment_id"
+                        app:layout_constraintTop_toTopOf="@+id/image_view_user_image_comment_id"
+                        tools:text="Moomen" />
+
+                    <TextView
+                        android:id="@+id/text_view_more_comment_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/more"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_view_comment_id"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_view_comment_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/text_view_user_name_comment_id"
+                        app:layout_constraintStart_toStartOf="@+id/text_view_user_name_comment_id"
+                        app:layout_constraintTop_toBottomOf="@+id/text_view_user_name_comment_id"
+                        tools:text="Nice" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/gray" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

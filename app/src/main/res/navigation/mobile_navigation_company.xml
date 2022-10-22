@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home_company">
+
+    <fragment
+        android:id="@+id/navigation_home_company"
+        android:name="com.moomen.news.ui.fragment.HomeFragmentCompany"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home_company" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard_company"
+        android:name="com.moomen.news.ui.fragment.DashboardFragmentCompany"
+        android:label="@string/console"
+        tools:layout="@layout/fragment_dashboard_company" />
+
+    <fragment
+        android:id="@+id/navigation_chat_company"
+        android:name="com.moomen.news.ui.fragment.ChatFragmentCompany"
+        android:label="@string/chat"
+        tools:layout="@layout/fragment_chat_company" />
+
+    <fragment
+        android:id="@+id/navigation_profile_company"
+        android:name="com.moomen.news.ui.fragment.ProfileFragmentCompany"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile_company" />
+</navigation>

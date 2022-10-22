@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/user_item_id">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_view_account_user_id"
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_baseline_account_circle_black_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_view_user_name_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Moomen Aldahdouh"
+                    android:theme="@style/FontTheme1"
+                    app:layout_constraintEnd_toEndOf="@+id/text_view_user_status_id"
+                    app:layout_constraintStart_toStartOf="@+id/image_view_user_status_id"
+                    app:layout_constraintTop_toBottomOf="@+id/image_view_user_status_id" />
+
+                <TextView
+                    android:id="@+id/text_view_user_email_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="mss488@gmail.com"
+                    android:theme="@style/FontTheme3"
+                    app:layout_constraintEnd_toEndOf="@+id/text_view_user_name_id"
+                    app:layout_constraintStart_toStartOf="@+id/text_view_user_name_id"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_user_name_id" />
+
+                <TextView
+                    android:id="@+id/text_view_user_location_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Palestine"
+                    android:theme="@style/FontTheme3"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                    app:layout_constraintEnd_toEndOf="@+id/text_view_user_email_id"
+                    app:layout_constraintStart_toEndOf="@+id/imageView11"
+                    app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+                <TextView
+                    android:id="@+id/text_view_user_status_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Active"
+                    android:theme="@style/FontTheme3"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_view_user_status_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_view_user_status_id"
+                    app:layout_constraintTop_toTopOf="@+id/image_view_user_status_id" />
+
+                <TextView
+                    android:id="@+id/text_view_date_user_create_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="18/11/2020"
+                    android:theme="@style/FontTheme3"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_view_account_user_id"
+                    app:layout_constraintStart_toStartOf="@+id/text_view_user_email_id"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_user_email_id" />
+
+                <ImageView
+                    android:id="@+id/image_view_user_status_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/image_view_account_user_id"
+                    app:layout_constraintTop_toTopOf="@+id/image_view_account_user_id"
+                    app:srcCompat="@drawable/ic_baseline_visibility_blue_24" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_view_date_user_create_id"
+                    app:layout_constraintStart_toEndOf="@+id/text_view_date_user_create_id"
+                    app:layout_constraintTop_toTopOf="@+id/text_view_date_user_create_id"
+                    app:srcCompat="@drawable/ic_baseline_location_on_24" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/gray" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

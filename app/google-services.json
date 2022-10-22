@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "310965064807",
+    "project_id": "news-and-magazines-app",
+    "storage_bucket": "news-and-magazines-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310965064807:android:77b515c2b4cd256e3170c2",
+        "android_client_info": {
+          "package_name": "com.moomen.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310965064807-emjmuh5c0n7ouihbaaplpk41s74gpgh2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moomen.news",
+            "certificate_hash": "9461377f99d1ab3f26dc620d4f443c4c8e77a3c3"
+          }
+        },
+        {
+          "client_id": "310965064807-1an1f4g39dnrgbb7nncv12at5vtm3337.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALnp-1WRkObk7E7p2mcMoZjUAWk6SuNIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310965064807-1an1f4g39dnrgbb7nncv12at5vtm3337.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

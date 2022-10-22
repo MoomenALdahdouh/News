@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="news_and_magazine">NEWS AND MAGAZINE</string>
+    <string name="we_surface_the_most_important_need_to_now_news">We surface the most important news</string>
+    <string name="tab_text_1">Signin</string>
+    <string name="tab_text_2">Signup</string>
+    <string name="tab_text_1_admin">Users</string>
+    <string name="tab_text_2_admin">Companies</string>
+    <string name="tab_text_3_admin">Admin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="login">Login</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="location_address">Location Address</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="register_now">Register Now</string>
+    <string name="title_profile">Profile</string>
+    <string name="_9876543210">9876543210</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="register_as_company">Register As Company</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="tags">Tags</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="news_title">News Title</string>
+    <string name="news_description">News Description</string>
+    <string name="create_news">Create News</string>
+    <string name="publish">Publish</string>
+    <string name="comment">Comment</string>
+    <string name="bbc_news">BBC News</string>
+    <string name="_29_11_2021">29/11/2021</string>
+    <string name="write_comment">Write Comment</string>
+    <string name="all">All</string>
+    <string name="breaking">Breaking</string>
+    <string name="lifestyle">Lifestyle</string>
+    <string name="music">Music</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="technology">Technology</string>
+    <string name="politics">Politics</string>
+    <string name="local">Local</string>
+    <string name="news_amp_magazine"><![CDATA[News & Magazine]]></string>
+    <string name="country">Country</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="on_review">On review</string>
+    <string name="free">Free</string>
+    <string name="palestine">Palestine</string>
+    <string name="active">Active</string>
+    <string name="visible">Visible</string>
+    <string name="admin">Admin</string>
+    <string name="create_admin">Create Admin</string>
+    <string name="create">Create</string>
+    <string name="comments">Comments</string>
+    <string name="see_more">See more</string>
+    <string name="more">More</string>
+    <string name="status">Status</string>
+    <string name="type">Type</string>
+    <string name="email1">Email</string>
+    <string name="phone">Phone</string>
+    <string name="created_on">Created on</string>
+    <string name="location">Location</string>
+    <string name="gender">Gender</string>
+    <string name="about_user">About User</string>
+    <string name="activity_user">User Activity</string>
+    <string name="chat">Chat</string>
+    <string name="console">Console</string>
+    <string name="company_activity">Company activity</string>
+    <string name="user">User</string>
+    <string name="company">Company</string>
+    <string name="setting">Setting</string>
+    <string name="edit">Edit</string>
+    <string name="this_account_has_been_blocked">This Account has been Blocked!</string>
+    <string name="this_account_has_been_removed">This Account has been Removed!</string>
+    <string name="you_can_t_post_news_anymore">You can\'t post news anymore!</string>
+    <string name="write_messages">Write Messages...</string>
+    <string name="support_team">Support Team</string>
+    <string name="to_be_able_to_read_this_news_you_have_to_pay">To be able to read this news</string>
+    <string name="nominal">Nominal:</string>
+    <string name="payment_now">Payment now</string>
+
+    <!--Spinner-->
+    <string-array name="genderArray">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>
